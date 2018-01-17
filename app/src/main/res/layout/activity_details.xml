@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/include_toolbar" />
+
+  <ImageView
+      android:id="@+id/detailsImage"
+      android:layout_width="match_parent"
+      android:layout_height="196dp"
+      android:contentDescription="@string/descr_image"
+      android:scaleType="centerCrop"
+      android:transitionName="@string/transition_image"
+      app:layout_constraintTop_toBottomOf="@id/toolbar"
+      tools:src="#f00"
+      />
+
+  <TextView
+      android:id="@+id/fullNameView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+      tools:text="@string/details_no_user"
+      app:layout_constraintTop_toBottomOf="@id/detailsImage"
+      app:layout_constraintStart_toStartOf="@id/guidelineStart"
+      app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+      />
+
+  <TextView
+      android:id="@+id/usernameView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+      app:layout_constraintTop_toBottomOf="@id/fullNameView"
+      app:layout_constraintStart_toStartOf="@id/guidelineStart"
+      app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+      tools:text="splinter"
+      />
+
+  <TextView
+      android:id="@+id/twitterView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+      app:layout_constraintTop_toBottomOf="@id/usernameView"
+      app:layout_constraintStart_toStartOf="@id/guidelineStart"
+      app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+      tools:text="\@colriot"
+      />
+
+  <android.support.constraint.Guideline
+      android:id="@+id/guidelineStart"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="16dp"
+      />
+
+  <android.support.constraint.Guideline
+      android:id="@+id/guidelineEnd"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_end="16dp"
+      />
+</android.support.constraint.ConstraintLayout>

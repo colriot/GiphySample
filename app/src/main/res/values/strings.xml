@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">GiphySample</string>
+
+  <string name="transition_toolbar" translatable="false">transition:toolbar</string>
+  <string name="transition_image" translatable="false">transition:image</string>
+
+  <string name="details_no_user">Anonymous</string>
+  <string name="action_retry">Retry</string>
+  <string name="descr_image">gif preview</string>
+  <string name="twitter_search_fmt">https://twitter.com/%s</string>
+
+  <string name="error_general">Couldn\'t load images :(</string>
+  <string name="error_failed_url">Failed to load url</string>
+</resources>
